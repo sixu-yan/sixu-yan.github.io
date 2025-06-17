@@ -6,7 +6,7 @@
 
 🌱 **My current research interest lies in robotic dexterous manipulation.**
 
-📄 Personal Website: [Sixu Yan](https://sixuyan.github.io/).
+📄 Personal Website: [Sixu Yan](https://sixu-yan.github.io/).
 
 📫 How to reach me: yansixu@hust.edu.cn. 
 
