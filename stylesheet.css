@@ -168,3 +168,15 @@ abs {
 span.highlight {
   background-color: #ffffd0;
 }
+
+@media screen and (max-width: 768px) {
+  table, tr, td {
+    display: block;
+    width: 100% !important;
+  }
+
+  td img {
+    width: 100% !important;
+    height: auto;
+  }
+}
