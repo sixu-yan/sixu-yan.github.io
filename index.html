@@ -1,0 +1,509 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- head -->
+<head>
+  <script>
+    (function () {
+        var a_idx = 0;
+        window.onclick = function (event) {
+            var a = new Array("✨", "🤖", "🥳", "👋", "🦾", "🐽");
+
+            var heart = document.createElement("b");
+            heart.onselectstart = new Function('event.returnValue=false');
+
+            document.body.appendChild(heart).innerHTML = a[a_idx];
+            a_idx = (a_idx + 1) % a.length;
+            heart.style.cssText = "position: fixed;left:-100%;";
+
+            var f = 16, 
+                x = event.clientX - f / 2, 
+                y = event.clientY - f,
+                c = randomColor(), 
+                a = 1,
+                s = 1.2; 
+
+            var timer = setInterval(function () { 
+                if (a <= 0) {
+                    document.body.removeChild(heart);
+                    clearInterval(timer);
+                } else {
+                    heart.style.cssText = "font-size:16px;cursor: default;position: fixed;color:" +
+                        c + ";left:" + x + "px;top:" + y + "px;opacity:" + a + ";transform:scale(" +
+                        s + ");";
+
+                    y--;
+                    a -= 0.016;
+                    s += 0.002;
+                }
+            }, 15)
+
+        }
+        function randomColor() {
+
+            return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math
+            .random() * 255)) + ")";
+
+        }
+    }());
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-66DNLPJ6PY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-66DNLPJ6PY');
+  </script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Sixu Yan   |  鄢思旭</title>
+  
+  <meta name="author" content="Sixu Yan">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" type="image/png" href="images/person/robot.png">
+</head>
+
+<!-- bib hide -->
+<script type="text/javascript">
+  function hideshow(which){
+  if (!document.getElementById)
+  return
+  if (which.style.display=="block")
+  which.style.display="none"
+  else
+  which.style.display="block"
+  }
+</script>
+
+<!-- body -->
+<body>
+  <!-- self-intro -->
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2%;width:55%;vertical-align:middle">
+              <!-- <p style="text-align:center"></p>
+                <name Sixu Yan | 鄢思旭</name>
+              </p>
+              <p style="text-align: justify"> -->
+              <p style="text-align: center; font-size: 30px; margin: 10px 0; padding: 0;">
+                <span style="font-family: 'Baskerville', 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;">Sixu Yan</span> |
+                <span style="font-family: 'KaiTi', '楷体', STKaiti, serif;">鄢思旭</span>
+              </p>
+              <intro>
+                Hi, I am Sixu, a first-year Ph.D. student at the <a href="https://github.com/hustvl/" target="_blank"><d>HUST Vision Lab (HUSTVL)</d></a>, Artificial Intelligence Institute, <a href="http://english.eic.hust.edu.cn/" target="_blank"><d>School of EIC</d></a>, <a href="https://english.hust.edu.cn/" target="_blank"><d>Huazhong University of Science and Technology (HUST)</d></a>, advised by Prof. <a href="https://xwcv.github.io/" target="_blank"><d>Xinggang Wang</d></a>. Prior to that, I received my M.S. degree from the <a href="https://me.sjtu.edu.cn/en/" target="_blank"><d>School of ME</d></a> at <a href="https://en.sjtu.edu.cn/" target="_blank"><d>Shanghai Jiao Tong University (SJTU)</d></a>, where I conducted research in the <a href="http://www.rcmvl.com/" target="_blank"><d>Robot Control and Machine Vision Lab (RCMVL)</d></a> at the Institute of Robotics, under the supervision of Prof. <a href="https://me.sjtu.edu.cn/zmxy/57361.html/" target="_blank"><d>Han Ding</d></a> and Prof. <a href="https://me.sjtu.edu.cn/teacher_directory1/xiongzhenhua.html/" target="_blank"><d>Zhenhua Xiong</d></a>.
+
+                <br>
+                <br>
+
+                My research goal is to develop <b>general-purpose cognitive robots</b>. Currently, I focus on scaling up robotic dexterous manipulation through large-scale synthetic data generation and sim-to-real transfer. My prior work includes motion planning and imitation learning. During my Ph.D., I have been fortunate to collaborate closely with Dr. <a href="https://liuhx111.github.io/" target="_blank"><d>Hangxin Liu</d></a>, Dr. <a href="https://zeyuzhang.com/" target="_blank"><d>Zeyu Zhang</d></a>, and Prof. <a href="https://zhusongchun.net/" target="_blank"><d>Song-Chun Zhu</d></a> from the <a href="https://www.bigai.ai/" target="_blank"><d>Beijing Institute for General Artificial Intelligence (BIGAI)</d></a>.
+
+                <p style="font-family: 'Brush Script MT', 'Lucida Handwriting', cursive; font-size: 20px; text-align: right; margin-top: 30px;">
+                  “Stay curious. Stay humble. Keep building.”
+                </p>
+
+              </intro>
+              <p style="text-align:center">
+                <a href="mailto:yansixu@hust.edu.cn">Email</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?user=vVU-oVMAAAAJ&hl=en" target="_blank">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://github.com/sixu-yan/" target="_blank">Github</a>&nbsp/&nbsp
+                <a href="https://x.com/SixuYan1999/" target="_blank">Twitter</a>&nbsp/&nbsp
+                <a href="images/person/WeChat.jpg" target="_blank">WeChat</a>
+              </p>
+            </td>
+
+            <!-- move the photo a bit left -->
+            <td style="padding:0%; width:26%; max-width:26%;">
+              <br>
+              <img style="padding:1%; width:100%; max-width:80%;  display: block; margin-left: auto; margin-right: auto; " alt="profile photo" src="images/person/cartoon.png" class="hoverZoomLink">
+            </td>
+
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    </tr>
+  </tbody></table>
+
+  <!-- News -->
+  <table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <!-- <br> -->
+    <heading>News</heading>
+    <br>
+    <p>
+      <td style="padding:0px;width:100%;vertical-align:middle">
+          <li>[2025/05] 🎉 <a href="https://zeyuzhang.com/papers/m3bench/" target="_blank">M3Bench</a> gets accepted to <b><font color='red'>RA-L 2025</font></b>!</li>
+          <li>[2025/04] 🎉 <a href="https://github.com/hustvl/DiffusionDrive/" target="_blank">DiffusionDrive</a> is awarded as <b><font color='red'>CVPR 2025 Highlight</font></b>!</li>
+          <li>[2025/03] 🎉 <a href="https://m2diffuser.github.io/" target="_blank">M2Diffuser</a> gets accepted to <b><font color='red'>T-PAMI 2025</font></b>!</li>
+          <li>[2025/02] 🎉 <a href="https://github.com/hustvl/DiffusionDrive/" target="_blank">DiffusionDrive</a> gets accepted to <b><font color='red'>CVPR 2025</font></b>!</li>
+      </td>
+    </p>
+  </tbody></table>
+
+  <!-- Research -->
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <br>
+    <heading>Research</heading>
+    <br>
+    <p>
+      My research interest is broadly in <strong>Robotics</strong> and <strong>Computer Vision</strong>, with a particular focus on generalizable perception and dexterous manipulation in complex environments. My long-term goal is to develop general-purpose cognitive robot systems that can robustly perceive and interact with the real world. Representative works from my Ph.D. research are <b><span class="highlight">highlighted</span></b> below. For a complete list of publications, please refer to my <a href="https://scholar.google.com/citations?user=vVU-oVMAAAAJ&hl=en" target="_blank">Google Scholar</a>.
+    </p>
+    
+    <!-- M3Bench -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()"  bgcolor="#ffffdc">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <!-- <br> -->
+            <img src='images/papers/M3Bench/teaser.jpg' width="220">
+          </div>
+          <!-- <br> -->
+          <img src='images/papers/M3Bench/teaser.jpg' width="220">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://zeyuzhang.com/papers/m3bench/" target="_blank">
+          <papertitle>M<sup>3</sup>Bench: Benchmarking Whole-body Motion Generation for Mobile Manipulation in 3D Scenes
+          </papertitle>
+        </a>
+        <br>
+        <a class="a2" href="https://zeyuzhang.com/" target="_blank">Zeyu Zhang*</a>,
+        <a:focus><strong>Sixu Yan*</strong></a:focus>,
+        <a class="a2" href="https://sites.google.com/view/muzhihan/" target="_blank">Muzhi Han</a>,
+        <a class="a2" href="" target="_blank">Zaijin Wang</a>,
+        <a class="a2" href="https://xwcv.github.io/" target="_blank">Xinggang Wang</a>,
+        <a class="a2" href="https://zhusongchun.net/" target="_blank">Song-Chun Zhu</a>,
+        <a class="a2" href="https://liuhx111.github.io/" target="_blank">Hangxin Liu<span>&#9993;</span></a>
+        <br>
+        (*equal contribution)
+        <br>
+        <a href="https://zeyuzhang.com/papers/m3bench/paper.pdf">Paper</a> /
+        <a href="https://arxiv.org/abs/2410.06678">arXiv</a> /
+        <a href="https://zeyuzhang.com/papers/m3bench/">Project</a> / 
+        <a href="https://youtu.be/TwJQnRm663M?si=dXVRyi1eJv57DaEaz">YouTube</a> /
+        <a href="https://b23.tv/p43BSUU">BiliBili</a> /
+        <a href="javascript:hideshow(document.getElementById('M3Bench'))">Bibtex</a>
+        <p id="M3Bench" style="font:1px; display: none">
+          @article{zhang2025m3bench,
+            <br>
+            title     = {M${}^{3}$Bench: Benchmarking Whole-Body Motion Generation for Mobile Manipulation in 3D Scenes},
+            <br>
+            author    = {Zhang, Zeyu and Yan, Sixu and Han, Muzhi and Wang, Zaijin and Wang, Xinggang and Zhu, Song-Chun and Liu, Hangxin},
+            <br>
+            journal   = {IEEE Robotics and Automation Letters},
+            <br>
+            year      = {2025},
+            <br>
+            volume    = {10},
+            <br>
+            number    = {7},
+            <br>
+            pages     = {7286-7293},
+            <br>
+            publisher = {IEEE}
+            <br>
+          }
+        </p>
+        <br>
+        <em><strong><span style="color: red;">IEEE Robotics and Automation Letters (RA-L) 2025</span></strong></em>
+        <p></p>
+        <p>We propose <b><font color='black'>M<sup>3</sup>Bench</font></b>, a large-scale benchmark and data generation toolkit for evaluating whole-body motion generation in mobile manipulation. It includes over 30,000 pick-and-place tasks across 119 realistic 3D scenes, with expert trajectories generated by VKC planner. Our benchmark supports assessing generalization to novel scenes and objects, and reveals that existing methods struggle with whole-body coordination under task and environmental constraints.</p>
+      </td>
+    </tr>
+
+    <!-- M2Diffuser -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()"  bgcolor="#ffffdc">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <!-- <br> -->
+            <img src='images/papers/M2Diffuser/overview.png' width="220">
+          </div>
+          <!-- <br> -->
+          <img src='images/papers/M2Diffuser/overview.png' width="220">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+    </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://m2diffuser.github.io/" target="_blank">
+            <papertitle>M<sup>2</sup>Diffuser: Diffusion-based Trajectory Optimization for Mobile Manipulation in 3D Scenes
+          </papertitle>
+        </a>
+          <br>
+          <a:focus><strong>Sixu Yan</strong></a:focus>,
+          <a class="a2" href="https://zeyuzhang.com/" target="_blank">Zeyu Zhang</a>,
+          <a class="a2" href="https://sites.google.com/view/muzhihan/" target="_blank">Muzhi Han</a>,
+          <a class="a2" href="" target="_blank">Zaijin Wang</a>,
+          <a class="a2" href="https://github.com/sudoku77/" target="_blank">Qi Xie</a>,
+          <a class="a2" href="" target="_blank">Zhitian Li</a>,
+          <a class="a2" href="" target="_blank">Zhehan Li</a>,
+          <a class="a2" href="https://liuhx111.github.io/" target="_blank">Hangxin Liu<span>&#9993;</span></a>,
+          <a class="a2" href="https://xwcv.github.io/" target="_blank">Xinggang Wang</a><span>&#9993;</span>,
+          <a class="a2" href="https://zhusongchun.net/" target="_blank">Song-Chun Zhu</a>
+          <br>
+        <a href="https://m2diffuser.github.io/assets/paper/M2Diffuser.pdf">Paper</a> /
+        <a href="https://arxiv.org/pdf/2410.11402">arXiv</a> /
+        <a href="https://m2diffuser.github.io/">Project</a> / 
+        <a href="https://github.com/m2diffuser/M2Diffuser">Code</a> /
+        <a href="https://youtu.be/T7kpDifRtfk?si=-R5agRpDM4uJKtuz">YouTube</a> /
+        <a href="https://b23.tv/avOmoz0">BiliBili</a> /
+        <a href="javascript:hideshow(document.getElementById('M2Diffuser'))">Bibtex</a>
+        <p id="M2Diffuser" style="font:1px; display: none">
+          @article{yan2025m2diffuser,
+            <br>
+            title     = {M2Diffuser: Diffusion-based Trajectory Optimization for Mobile Manipulation in 3D Scenes},
+            <br>
+            author    = {Yan, Sixu and Zhang, Zeyu and Han, Muzhi and Wang, Zaijin and Xie, Qi and Li, Zhitian and Li, Zhehan and Liu, Hangxin and Wang, Xinggang and Zhu, Song-Chun},
+            <br>
+            journal   = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+            <br>
+            year      = {2025},
+            <br>
+            publisher = {IEEE}
+            <br>
+          }
+        </p>
+        <br>
+        <em><strong><span style="color: red;">IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI) 2025</span></strong></em>
+        <p></p>
+        <p>We propose <b><font color='black'>M<sup>2</sup>Diffuser</font></b> (Mobile Manipulation Diffuser), a conditional diffusion-based neural motion planner capable of generating full-body coordinated trajectories that satisfy both physical and task constraints. This approach provides a unified framework for motion generation and trajectory optimization in 3D scenes and enables seamless transfer from simulation to real-world robotic platforms.</p>
+      </td>
+    </tr>
+
+    <!-- DiffusionDrive -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()"  bgcolor="#ffffdc">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <!-- <br> -->
+            <img src='images/papers/DiffusionDrive/truncated_diffusion_policy.png' width="220">
+          </div>
+          <!-- <br> -->
+          <img src='images/papers/DiffusionDrive/truncated_diffusion_policy.png' width="220">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+    </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://github.com/hustvl/DiffusionDrive/" target="_blank">
+            <papertitle>DiffusionDrive: Truncated Diffusion Model for End-to-End Autonomous Driving
+          </papertitle>
+        </a>
+          <br>
+          <a class="a2" href="https://github.com/LegendBC" target="_blank">Bencheng Liao</a>,
+          <a class="a2" href="https://scholar.google.com/citations?user=PIeNN2gAAAAJ&hl=en&oi=sra/" target="_blank">Shaoyu Chen</a>,
+          <a class="a2" href="" target="_blank">Haoran Yin</a>,
+          <a class="a2" href="https://github.com/rb93dett/" target="_blank"> Bo Jiang</a>,
+          <a class="a2" href="https://scholar.google.com/citations?user=PdJIyPIAAAAJ&hl=zh-CN" target="_blank">Cheng Wang</a>,
+          <a:focus><strong>Sixu Yan</strong></a:focus>,
+          <a class="a2" href="" target="_blank">Xinbang Zhang</a>,
+          <a class="a2" href="" target="_blank">Xiangyu Li</a>,
+          <a class="a2" href="" target="_blank">Ying Zhang</a>,
+          <a class="a2" href="https://scholar.google.com/citations?user=pCY-bikAAAAJ&hl=zh-CN/" target="_blank">Qian Zhang</a>,
+          <a class="a2" href="https://xwcv.github.io/" target="_blank">Xinggang Wang</a><span>&#9993;</span>
+          <br>
+        <a href="https://arxiv.org/pdf/2411.15139">Paper</a> /
+        <a href="https://arxiv.org/abs/2411.15139">arXiv</a> /
+        <a href="https://github.com/hustvl/DiffusionDrive">Project</a> / 
+        <a href="https://github.com/hustvl/DiffusionDrive">Code</a> /
+        <a href="https://huggingface.co/hustvl/DiffusionDrive">Hugging Face</a> /
+        <a href="javascript:hideshow(document.getElementById('DiffusionDrive'))">Bibtex</a>
+        <p id="DiffusionDrive" style="font:1px; display: none">
+          @InProceedings{liao2025diffusiondrive,
+            <br>
+            author    = {Liao, Bencheng and Chen, Shaoyu and Yin, Haoran and Jiang, Bo and Wang, Cheng and Yan, Sixu and Zhang, Xinbang and Li, Xiangyu and Zhang, Ying and Zhang, Qian and Wang, Xinggang},
+            <br>
+            title     = {DiffusionDrive: Truncated Diffusion Model for End-to-End Autonomous Driving},
+            <br>
+            booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
+            <br>
+            year      = {2025},
+            <br>
+            pages     = {12037-12047}
+            <br>
+          }
+        </p>
+        <br>
+        <em><strong><span style="color: red;">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2025, Highlight</span></strong></em>
+        <p></p>
+        <p>We propose <b><font color='black'>DiffusionDrive</font></b>, a truncated diffusion-based planner for real-time end-to-end autonomous driving. By injecting multi-mode anchors and reducing the denoising steps to two, it achieves fast inference while maintaining high-quality trajectory prediction. DiffusionDrive outperforms prior methods on the NAVSIM benchmark in both planning accuracy and diversity.</p>
+      </td>
+    </tr>
+
+  </tbody></table>
+
+  <!-- Education and Experience -->
+  <table width="100%" align="center" border="0" cellpadding="10"><tbody>
+      <br>
+          <heading>Education and Experience</heading>
+      <br>
+      <!-- HUST -->
+      <tr>
+        <td style="padding-left:20px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/edu&exp/hust.png", width="120"></td>
+        <td width="100%" valign="center">
+          <strong><a href="https://english.hust.edu.cn/" target="_blank"><papertitle>Huazhong University of Science and Technology (HUST)</papertitle> </a></strong>
+          <br> <em>2024.09 - Present</em>
+          <br><strong>Ph.D. Student</strong> at <a href="https://github.com/hustvl/" target="_blank">HUST Vision Lab (HUSTVL)</a>
+          <br> Research Advisor: Prof. <a href="https://xwcv.github.io/" target="_blank">Xinggang Wang</a>
+        </td>
+      </tr>
+      <!-- BIGAI -->
+      <tr>
+        <td style="padding-left:20px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/edu&exp/bigai.png", width="120"></td>
+        <td width="90%" valign="center">
+          <strong><a href="https://www.bigai.ai/" target="_blank"><papertitle>Beijing Institute for General Artificial Intelligence (BIGAI)</papertitle></a></strong>
+          <br> <em>2023.07 - 2024.08</em>
+          <br> <strong>Research Intern at Robotics Lab</strong>
+          <br> Research Advisor: Dr. <a href="https://liuhx111.github.io/" target="_blank">Hangxin Liu</a>, Dr. <a href="https://zeyuzhang.com/" target="_blank">Zeyu Zhang</a> 
+          <br> Academic Advisor: Prof. <a href="https://zhusongchun.net/" target="_blank">Song-Chun Zhu</a>
+        </td>
+      </tr>
+      <!-- SJTU -->
+      <tr>
+        <td style="padding-left:20px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/edu&exp/sjtu.png", width="120"></td>
+        <td width="90%" valign="center">
+          <strong><a href="https://en.sjtu.edu.cn/" target="_blank"><d>Shanghai Jiao Tong University (SJTU)</d></a></strong>
+          <br> <em>2021.09 - 2024.06</em>
+          <br> <strong>Master Student</strong> at <a href="http://www.rcmvl.com/" target="_blank">Robot Control and Machine Vision Lab (RCMVL)</a>
+          <br> Research Advisor: Prof. <a href="https://me.sjtu.edu.cn/teacher_directory1/xiongzhenhua.html/" target="_blank">Zhenhua Xiong</a> 
+          <br> Academic Advisor: Prof. <a href="https://me.sjtu.edu.cn/zmxy/57361.html/" target="_blank">Han Ding</a>
+        </td>
+      </tr>
+      <!-- OUC -->
+      <tr>
+          <td style="padding-left:24px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/edu&exp/ouc.png", width="115"></td>
+          <td width="90%" valign="center">
+            <strong><a href="http://eweb.ouc.edu.cn/" target="_blank"><papertitle>Ocean University of China (OUC)</papertitle></a></strong>
+            <br> <em>2017.09 - 2021.06</em>
+            <br> <strong>Undergraduate Student</strong>
+            <br> GPA ranking (Application Season GPA):  <strong>1</strong>/62
+            <br> Research Advisor: Prof. Xiaojie Tian
+          </td>
+      </tr>
+      
+  </tbody></table>
+  
+  <!-- Services -->
+  <table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+        <br>
+        <heading>Services</heading>
+        <br>
+      <td style="padding:0px;width:100%;vertical-align:middle">
+        <p>
+          <li>Reviewer: The Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025)</li>
+        <p>
+        <p>
+          <li>Reviewer: IEEE Robotics and Automation Letters (RA-L 2024)</li>
+        <p>
+        <p>
+          <li>Reviewer: IEEE International Conference on Robotics and Automation (ICRA 2024)</li>
+        <p>
+      </td>
+    </tr>
+  </tbody></table>
+
+  <!-- Selected Awards and Honors -->
+  <table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+        <br>
+        <heading>Selected Awards and Honors</heading>
+        <br>
+      <tr>
+        <td style="padding:0px;width:100%;vertical-align:middle">
+          <p>
+            <li>2023: First-class Comprehensive Academic Scholarship, Shanghai Jiao Tong University</li>
+          </p>
+          <p>
+            <li>2022: First-class Comprehensive Academic Scholarship, Shanghai Jiao Tong University</li>
+          </p>
+          <p>
+            <li>2021: National Scholarship (Highest Honor for undergraduates in China)</li>
+          </p>
+          <p>
+            <li>2021: First-class Scholarship for Academic Excellence, Ocean University of China</li>
+          </p>
+          <p>
+            <li>2021: Outstanding Individual of the 10th Role Model Program, College of Engineering, OUC</li>
+          </p>
+          <p>
+            <li>2021: Outstanding Bachelor's Thesis Award, Ocean University of China</li>
+          </p>
+          <p>
+            <li>2019: First-class Scholarship for Academic Excellence, Ocean University of China</li>
+          </p>
+          <p>
+            <li>2019: Scholarship for Social Practice, Ocean University of China</li>
+          </p>
+          <p>
+            <li>2018: First-class Scholarship for Academic Excellence, Ocean University of China</li>
+          </p>
+          <p>
+            <li>2018: Scholarship for Technological Innovation, Ocean University of China</li>
+          </p>
+          <p>
+            <li>2019: First Prize, 13th National College Student Energy Saving and Emission Reduction Competition</li>
+          </p>
+          <p>
+            <li>2019: Honorable Mention (Second Prize), Mathematical Contest in Modeling (MCM)</li>
+          </p>
+          <p>
+            <li>2019: Second Prize, 10th National Undergraduate Mathematics Competition</li>
+          </p>
+          <p>
+            <li>2019: First Prize, 9th Shandong Undergraduate Mathematics Competition</li>
+          </p>
+          <p>
+            <li>2019: First Prize, 2nd Shandong Undergraduate Physics Competition</li>
+          </p>
+        </td>
+      </tr>
+  </tbody></table>
+
+  <!-- Aknowledgements -->
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr>
+      <!-- <br> -->
+      <!-- <br> -->
+      <hr>
+        <p style="text-align:center">
+            This homepage is designed based on <a href="https://jonbarron.info/">Jon Barron</a>'s website and deployed on <a href="https://pages.github.com/">Github Pages</a>. Last updated: Jun. 16, 2025
+          <br>
+          © 2025 Sixu Yan
+        </p>
+      </td>
+      </tr>
+  </tbody></table>
+
+</body>
+</html>
