@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ site.title }} | Personal Website</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="keywords" content="Sixu Yan, 鄢思旭, Robotics, Embodied AI, Computer Vision, HUST, PhD">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ site.title }} | Personal Website">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:image" content="{{ '/images/person/cartoon.png' | absolute_url }}">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="400">
+  <meta property="og:image:height" content="400">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="{{ '/images/person/cartoon.png' | absolute_url }}">
+
+  {% include seo.html %}
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="{{ '/images/person/robot.png' | relative_url }}">
+  <link rel="shortcut icon" type="image/png" href="{{ '/images/person/robot.png' | relative_url }}">
+
+  <!-- Mobile Optimization -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="cleartype" content="on">
+  
+  <script>
+    document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  </script>
+
+  <!-- For all browsers -->
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
