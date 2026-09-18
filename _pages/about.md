@@ -34,6 +34,13 @@ My research goal is to develop **general-purpose cognitive robots**. Currently, 
     <figcaption>Bimanual Sorting</figcaption>
   </figure>
   <figure class="video-card">
+    <video autoplay muted loop playsinline controls preload="metadata" aria-label="Humanoid Whole-body Control">
+      <source src="{{ '/assets/videos/humanoid-whole-body-control.mp4' | relative_url }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <figcaption>Humanoid Whole-body Control</figcaption>
+  </figure>
+  <figure class="video-card">
     <video autoplay muted loop playsinline controls preload="metadata" aria-label="Mobile Manipulation">
       <source src="{{ '/assets/videos/bimanual-coordination.mp4' | relative_url }}" type="video/mp4">
       Your browser does not support the video tag.
@@ -48,6 +55,18 @@ My research goal is to develop **general-purpose cognitive robots**. Currently, 
     <figcaption>Bimanual Coordination</figcaption>
   </figure>
 </div>
+
+<script>
+  document.querySelectorAll('.video-gallery video').forEach((video) => {
+    video.muted = true;
+    video.defaultMuted = true;
+    video.volume = 0;
+    video.addEventListener('volumechange', () => {
+      video.muted = true;
+      video.volume = 0;
+    });
+  });
+</script>
 
 <span class="anchor" id="news"></span>
 
@@ -129,6 +148,39 @@ We propose **UniDriveVLA**, a unified driving vision-language-action model that 
   year    = {2026}
 }
 {% endraw %}
+```
+</details>
+
+  </div>
+</div>
+
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div>
+      <div class="badge">arXiv 2026</div>
+      <img src="images/papers/OmniTrack/framework.png" alt="OmniTrack framework overview" width="100%">
+    </div>
+  </div>
+  <div class="paper-box-text" markdown="1">
+
+## [OmniTrack: General Motion Tracking via Physics-Consistent Reference](https://omnitrack-humanoid.github.io/)
+
+Yuhan Li, Peiyuan Zhi, [Yunshen Wang](https://perkins729.github.io/), [Tengyu Liu](https://tengyu.ai/), **Sixu Yan**, [Wenyu Liu](https://eic.hust.edu.cn/professor/liuwenyu/), [Xinggang Wang](https://xwcv.github.io/), [Baoxiong Jia](https://buzz-beater.github.io/), [Siyuan Huang](https://siyuanhuang.com/)
+
+[Paper](https://arxiv.org/pdf/2602.23832) · [arXiv](https://arxiv.org/abs/2602.23832) · [Project](https://omnitrack-humanoid.github.io/) · [Code](https://github.com/OmniTrack-Humanoid/OmniTrack) · [YouTube](https://www.youtube.com/watch?v=5u93K6YZV3g)
+
+We propose **OmniTrack**, a two-stage humanoid motion tracking framework that first generates physically feasible references in simulation and then learns a general policy to track them, improving accuracy and generalization to unseen motions.
+
+<details markdown="1">
+<summary>BibTeX</summary>
+
+```bibtex
+@article{li2026omnitrack,
+  title   = {OmniTrack: General motion tracking via physics-consistent reference},
+  author  = {Li, Yuhan and Zhi, Peiyuan and Wang, Yunshen and Liu, Tengyu and Yan, Sixu and Liu, Wenyu and Wang, Xinggang and Jia, Baoxiong and Huang, Siyuan},
+  journal = {arXiv preprint arXiv:2602.23832},
+  year    = {2026}
+}
 ```
 </details>
 
@@ -320,6 +372,7 @@ We propose **DiffusionDrive**, a truncated diffusion-based planner for real-time
 
 - **2026** — Grand Prize, 14th Hubei Challenge Cup College Student Entrepreneurship Plan Competition, Huazhong University of Science and Technology
 - **2025** — Best Poster Award, 4th Workshop on Mobile Manipulation and Embodied Intelligence (MOMA.v4), IROS 2025
+- **2025** — Champion, Solo Dance, 2025 World Humanoid Robot Games
 - **2025** — Best Paper Award (First Prize), 1st International Conference on General Artificial Intelligence
 - **2025** — National Scholarship for Ph.D. Students, Huazhong University of Science and Technology
 - **2025** — Outstanding Graduate Student, Huazhong University of Science and Technology
