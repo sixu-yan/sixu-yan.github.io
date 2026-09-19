@@ -362,7 +362,7 @@ We propose **DiffusionDrive**, a truncated diffusion-based planner for real-time
 - Reviewer, IEEE Transactions on Automation Science and Engineering (**T-ASE 2026**)
 - Reviewer, European Conference on Computer Vision (**ECCV 2026**)
 - Reviewer, IEEE/CVF Conference on Computer Vision and Pattern Recognition (**CVPR 2026**)
-- Reviewer, The Thirty-Ninth Annual Conference on Neural Information Processing Systems (**NeurIPS 2025**)
+- Reviewer, Conference on Neural Information Processing Systems (**NeurIPS 2025**)
 - Reviewer, IEEE Robotics and Automation Letters (**RA-L 2024**)
 - Reviewer, IEEE International Conference on Robotics and Automation (**ICRA 2024**)
 
