@@ -107,7 +107,7 @@ We propose **AdaRoboVLG**, a task-adaptive vision-language-grasping framework th
 <summary>BibTeX</summary>
 
 ```bibtex
-@article{yan2026adaptive,
+@article{yan2026adarobovlg,
   title   = {Adaptive Vision-Language Grasping via Composable Foundation Priors and Generalizable Grasp Synthesis},
   author  = {Yan, Sixu and Wang, Shikang and Huang, Binhua and Tang, Xuanlai and Fan, Guohua and Huang, Fan and Li, Haoxuan and Li, Yongkang and Li, Yuhan and Liao, Bencheng and Zhang, Zeyu and Liu, Wenyu and Liu, Hangxin and Wang, Xinggang},
   journal = {arXiv preprint arXiv:2609.04096},
