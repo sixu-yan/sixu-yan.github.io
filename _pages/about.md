@@ -378,7 +378,7 @@ We propose **DiffusionDrive**, a truncated diffusion-based planner for real-time
 - **2025** — Outstanding Graduate Student, Huazhong University of Science and Technology
 - **2023** — First-class Comprehensive Academic Scholarship, Shanghai Jiao Tong University
 - **2022** — First-class Comprehensive Academic Scholarship, Shanghai Jiao Tong University
-- **2021** — National Scholarship (Highest Honor for undergraduates in China)
+- **2021** — National Scholarship for Undergraduates, Ocean University of China
 - **2021** — First-class Scholarship for Academic Excellence, Ocean University of China
 - **2021** — Outstanding Individual of the 10th Role Model Program, College of Engineering, OUC
 - **2021** — Outstanding Bachelor's Thesis Award, Ocean University of China
